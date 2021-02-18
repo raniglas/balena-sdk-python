@@ -19,14 +19,14 @@ def get_version(package):
     return re.search("__version__ = ['\"]([^'\"]+)['\"]", init_py).group(1)
 
 setup(
-    name='balena-sdk',
+    name='cloud-balena-sdk',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version=get_version('balena'),
+    version=get_version('cloudbalena'),
 
-    description='Balena SDK for Python',
+    description='Balena SDK for Python (cloud)',
 
     # The project's main homepage.
     url='https://github.com/balena-io/balena-sdk-python',
